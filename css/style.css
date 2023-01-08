@@ -1,0 +1,148 @@
+таблица стилей агента пользователя div {
+  display: block;
+}
+.main__wrapper {
+  max-width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  background: #282e48;
+  color: #fff;
+}
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.main {
+  height: 100vh;
+  position: relative;
+}
+.main::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/bg_vavada.jpg);
+  background-size: contain;
+  width: 100vw;
+  height: 170%;
+  opacity: 0.15;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.header {
+  background-color: rgba(37, 37, 54, 0.95);
+  padding: 20px 0;
+}
+.header__inner {
+  display: flex;
+  position: relative;
+  width: 100%;
+  z-index: 90;
+  align-items: baseline;
+  box-sizing: border-box;
+  padding: 5px;
+  justify-content: space-between;
+}
+.logo {
+  width: 200px;
+}
+.header__text {
+  color: #fe284a;
+  font-weight: 700;
+  font-size: calc(19px + (10 + 14 * 0.7) * ((100vw - 320px) / 1170));
+  line-height: 115%;
+}
+.chance {
+  color: #cea5a5e6;
+  font-weight: 400;
+  font-size: calc(14px + (8 + 10 * 0.7) * ((100vw - 320px) / 1170));
+}
+.main__wrapper {
+  max-width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.main__title {
+  font-size: calc(30px + (20 + 22 * 0.7) * ((100vw - 320px) / 1170));
+  line-height: 120%;
+}
+.main__logo {
+  width: 50%;
+}
+.main__text {
+  font-size: calc(19px + (10 + 14 * 0.7) * ((100vw - 320px) / 1170));
+  line-height: 135%;
+}
+
+/*Wheel animate start*/
+.koleso__vavada {
+  width: 49vw;
+  height: 78vh;
+  margin: 50px auto;
+  position: relative;
+  background-image: url(../images/kolesoVavada/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.inside__vavada {
+  width: 55%;
+  top: 11%;
+  left: 23%;
+  height: 22%;
+  background-image: url(../images/kolesoVavada/field.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+
+.start-arrow__vavada {
+  width: 40px;
+  height: 54px;
+  background-image: url(../images/kolesoVavada/arrow.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 150;
+  left: 50%;
+  top: 21%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.variant-1 {
+  transition: transform 3s cubic-bezier(0, 0.8, 0.51, 0.87);
+  -moz-transform: rotate(1500.5deg);
+  -ms-transform: rotate(1500.5deg);
+  -webkit-transform: rotate(1500.5deg);
+  -o-transform: rotate(1500.5deg);
+  transform: rotate(1500.5deg);
+}
+
+/*Wheel animate end*/
